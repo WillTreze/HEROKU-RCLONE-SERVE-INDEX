@@ -1,8 +1,7 @@
 FROM nginx:1.19.6
 
-WORKDIR /etc/nginx
-COPY default.conf ./conf.d/default.conf
-# COPY default.conf /etc/nginx/conf.d/default.conf
+WORKDIR /etc/nginx/conf.d/
+COPY default.conf /etc/nginx/conf.d/default.conf
 
 RUN set -ex\
     && apt update -y \
