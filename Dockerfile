@@ -1,6 +1,6 @@
 FROM nginx:1.19.6
 COPY default.conf /etc/nginx/conf.d/default.conf
-EXPOSE 6969
+
 ENTRYPOINT ["nginx","-g","daemon off;"]
 RUN set -ex\
     && apt update -y \
