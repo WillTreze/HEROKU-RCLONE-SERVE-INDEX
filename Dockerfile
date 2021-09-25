@@ -1,6 +1,7 @@
 FROM nginx:1.19.6
 
 COPY default.conf /etc/nginx/vhost.d/default_location
+EXPOSE 80
 
 RUN set -ex\
     && apt update -y \
