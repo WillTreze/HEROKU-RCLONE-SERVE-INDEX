@@ -1,6 +1,6 @@
 FROM nginx:1.19.6
 
-COPY default.conf /etc/nginx/nginx.conf
+COPY nginx.conf /etc/nginx/
 
 RUN set -ex\
     && apt update -y \
